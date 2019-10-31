@@ -1,0 +1,11 @@
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.csprojAssemblyReference.cache
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.csproj.CoreCompileInputs.cache
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.AssemblyInfoInputs.cache
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.AssemblyInfo.cs
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLife/bin/Debug/netcoreapp2.2/GameOfLife.deps.json
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLife/bin/Debug/netcoreapp2.2/GameOfLife.runtimeconfig.json
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLife/bin/Debug/netcoreapp2.2/GameOfLife.runtimeconfig.dev.json
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLife/bin/Debug/netcoreapp2.2/GameOfLife.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLife/bin/Debug/netcoreapp2.2/GameOfLife.pdb
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.pdb

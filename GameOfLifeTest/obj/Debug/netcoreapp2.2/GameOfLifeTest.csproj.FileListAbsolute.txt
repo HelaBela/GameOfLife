@@ -1,0 +1,17 @@
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/bin/Debug/netcoreapp2.2/nunit.engine.netstandard.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLifeTest.deps.json
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLifeTest.runtimeconfig.json
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLifeTest.runtimeconfig.dev.json
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLifeTest.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLifeTest.pdb
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLife.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLife.pdb
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.csprojAssemblyReference.cache
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.csproj.CoreCompileInputs.cache
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.AssemblyInfoInputs.cache
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.AssemblyInfo.cs
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.csproj.CopyComplete
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.pdb

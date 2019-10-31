@@ -1,0 +1,17 @@
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/bin/Debug/netcoreapp2.2/nunit.engine.netstandard.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/bin/Debug/netcoreapp2.2/GridTests.deps.json
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/bin/Debug/netcoreapp2.2/GridTests.runtimeconfig.json
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/bin/Debug/netcoreapp2.2/GridTests.runtimeconfig.dev.json
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/bin/Debug/netcoreapp2.2/GridTests.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/bin/Debug/netcoreapp2.2/GridTests.pdb
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/bin/Debug/netcoreapp2.2/GameOfLife.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/bin/Debug/netcoreapp2.2/GameOfLife.pdb
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/obj/Debug/netcoreapp2.2/GridTests.csprojAssemblyReference.cache
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/obj/Debug/netcoreapp2.2/GridTests.csproj.CoreCompileInputs.cache
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/obj/Debug/netcoreapp2.2/GridTests.AssemblyInfoInputs.cache
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/obj/Debug/netcoreapp2.2/GridTests.AssemblyInfo.cs
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/obj/Debug/netcoreapp2.2/GridTests.csproj.CopyComplete
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/obj/Debug/netcoreapp2.2/GridTests.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GridTests/obj/Debug/netcoreapp2.2/GridTests.pdb
