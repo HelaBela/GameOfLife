@@ -7,7 +7,7 @@ namespace GameOfLife
             var rows = cellsState.GetLength(0);
             var columns = cellsState.GetLength(1);
             
-            var cells = new Cell[4, 4];
+            var cells = new Cell[cellsState.GetLength(0), cellsState.GetLength(1)];
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
@@ -26,5 +26,7 @@ namespace GameOfLife
             }
             return new Grid(cells, consoleOperations);
         }
+        
+        
     }
 }
