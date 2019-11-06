@@ -1,23 +1,47 @@
 namespace GameOfLife
 {
-    public class Cell
+    public class Cell:ICell
     {
-        private readonly MutableCell _mutableCell;
+        private  State _cellState;
 
-        public Cell(MutableCell mutableCell)
+
+        public Cell(State cellState)
         {
-            _mutableCell = mutableCell;
+            _cellState = cellState;
+        }
+
+        public override string ToString()
+        {
+            if (_cellState == State.Dead)
+                return ".";
+            return "*";
         }
 
        
         public bool IsAlive()
         {
-            return _mutableCell.CellState == State.Alive;
+            return _cellState == State.Alive;
         }
 
         public bool IsDead()
         {
             return !IsAlive();
+        }
+        
+        public void Kill()
+
+        {
+            _cellState = State.Dead;
+        }
+
+        public void Revive()
+        {
+            _cellState = State.Alive;
+        }
+        
+        public Cell Clone()
+        {
+            return new Cell(_cellState);
         }
         
     }

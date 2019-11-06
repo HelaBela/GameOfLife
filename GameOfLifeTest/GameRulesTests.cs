@@ -15,17 +15,18 @@ namespace GameRulesTests
         public void When_Less_Than_2_Alive_Neighbours_Will_Return_Dead_State()
         {
             //arrange
-            var cellsState = new[,]{{0, 0, 0}, {1, 1, 0}, {0, 0, 0}};
-            var gameRules = new Mock<IGameRules>();
-            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, gameRules.Object);
+            var gameRules = new GameRules();
 
+            var neighbours = new IReadOnlyCell[] { new Cell(State.Alive), new Cell(State.Dead),  new Cell(State.Dead), new Cell(State.Dead), new Cell(State.Dead), new Cell(State.Dead), new Cell(State.Dead), new Cell(State.Dead)};
+           
             
             //act
-            var nextGen = grid.CreateNextGen();
+            
+            var cell = gameRules.GetNextState(neighbours);
 
 
             //assert
-            Assert.IsTrue(nextGen.IsCellDeadAt(1,1));
+            Assert.IsTrue(cell == State.Dead);
         }
     }
 }

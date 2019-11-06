@@ -2,6 +2,6 @@ namespace GameOfLife
 {
     public interface IGameRules
     {
-        State GetNextState(Cell[] neighbours);
+        State GetNextState(IReadOnlyCell[] neighbours);
     }
 }

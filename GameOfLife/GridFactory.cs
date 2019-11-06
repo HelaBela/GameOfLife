@@ -8,7 +8,6 @@ namespace GameOfLife
             var columns = cellsState.GetLength(1);
             
             var cells = new Cell[rows, columns];
-            var mutableCells = new MutableCell[rows, columns];
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
@@ -21,12 +20,11 @@ namespace GameOfLife
                     }
                     else
                         aliveOrDead = State.Dead;
-
-                    mutableCells[i, j] = new MutableCell(aliveOrDead);
-                    cells[i, j] = new Cell(mutableCells[i, j]);
+                    
+                    cells[i, j] = new Cell(aliveOrDead);
                 }
             }
-            return new BoundaryLessGrid(cells, mutableCells, gameRules);
+            return new BoundaryLessGrid(cells, gameRules);
         }
         
         

@@ -6,14 +6,12 @@ namespace GameOfLife
     public class BoundaryLessGrid : IGrid
     {
         private readonly Cell[,] _cellsGeneration;
-        private readonly MutableCell[,] _mutableCells;
         private readonly IGameRules _gameRules;
 
 
-        public BoundaryLessGrid(Cell[,] cellsGeneration, MutableCell[,] mutableCells, IGameRules gameRules)
+        public BoundaryLessGrid(Cell[,] cellsGeneration, IGameRules gameRules)
         {
             _cellsGeneration = cellsGeneration;
-            _mutableCells = mutableCells;
             _gameRules = gameRules;
         }
 
@@ -21,11 +19,11 @@ namespace GameOfLife
         {
             var output = "";
 
-            for (int i = 0; i < _mutableCells.GetLength(0); i++)
+            for (int i = 0; i < _cellsGeneration.GetLength(0); i++)
             {
-                for (int j = 0; j < _mutableCells.GetLength(1); j++)
+                for (int j = 0; j < _cellsGeneration.GetLength(1); j++)
                 {
-                    output += $"{_mutableCells[i, j]}";
+                    output += $"{_cellsGeneration[i, j]}";
                 }
 
                 output += Environment.NewLine;
@@ -51,9 +49,9 @@ namespace GameOfLife
             return position;
         }
 
-        public Cell[] GetNeighbours(int x, int y)
+        public IReadOnlyCell[] GetNeighbours(int x, int y)
         {
-            var neighbours = new List<Cell>
+            var neighbours = new List<IReadOnlyCell>
             {
                 _cellsGeneration[x, HandleEdgeIfNeeded(y + 1, 1)],
                 _cellsGeneration[HandleEdgeIfNeeded(x + 1, 0), y],
@@ -85,7 +83,7 @@ namespace GameOfLife
 
         public BoundaryLessGrid CreateNextGen()
         {
-            MutableCell[,] nextGen = Clone(_mutableCells);
+           var nextGen = Clone(_cellsGeneration);
 
 
             for (int i = 0; i < _cellsGeneration.GetLength(0); i++)
@@ -105,16 +103,16 @@ namespace GameOfLife
             }
             
             
-            return new BoundaryLessGrid(_cellsGeneration, nextGen, _gameRules);
+            return new BoundaryLessGrid(nextGen, _gameRules);
         }
 
 
-        private MutableCell[,] Clone(MutableCell[,] existingCells)
+        private Cell[,] Clone(Cell[,] existingCells)
         {
             var rows = existingCells.GetLength(0);
             var cols = existingCells.GetLength(1);
 
-            MutableCell[,] clonedCells = new MutableCell[rows, cols];
+            var clonedCells = new Cell[rows, cols];
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < cols; j++)

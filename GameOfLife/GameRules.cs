@@ -6,7 +6,7 @@ namespace GameOfLife
     public class GameRules : IGameRules
     {
         
-        public State GetNextState(Cell[] neighbours)
+        public State GetNextState(IReadOnlyCell[] neighbours)
         {
             var aliveNeighboursCount = neighbours.Count(n => n.IsAlive());
             

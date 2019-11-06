@@ -16,10 +16,11 @@
         <e p="GameOfLife.csproj" t="IncludeRecursive" />
         <e p="GameRules.cs" t="Include" />
         <e p="GridFactory.cs" t="Include" />
+        <e p="ICell.cs" t="Include" />
         <e p="IConsoleOperations.cs" t="Include" />
         <e p="IGameRules.cs" t="Include" />
         <e p="IGrid.cs" t="Include" />
-        <e p="MutableCell.cs" t="Include" />
+        <e p="IReadOnlyCell.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">

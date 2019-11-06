@@ -2,36 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="770b6856-1326-4c4f-bec5-8432705dfad8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GameOfLife/BoundaryLessGrid.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameOfLife/Game.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GameOfLifeTest/BoundryLessGridTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameOfLife/ICell.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GameOfLife/IReadOnlyCell.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameOfLife/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameOfLife/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameOfLife/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameOfLife/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOfLife/BoundaryLessGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/BoundaryLessGrid.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameOfLife/Cell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/Cell.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLife/ConsoleOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/ConsoleOperations.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameOfLife/GameRules.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/GameRules.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLife/Grid.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/GameOfLife/GridFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/GridFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLife/IConsoleOperations.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/IConsoleOperations.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOfLife/IGameRules.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/IGameRules.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameOfLife/IGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/IGrid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLife/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOfLife/MutableCell.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/GameOfLife/bin/Debug/netcoreapp2.2/GameOfLife.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/bin/Debug/netcoreapp2.2/GameOfLife.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameOfLife/bin/Debug/netcoreapp2.2/GameOfLife.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/bin/Debug/netcoreapp2.2/GameOfLife.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife/obj/Debug/netcoreapp2.2/GameOfLife.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLifeTest/GridFactoryTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLifeTest/GridTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLife.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLife.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLife.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLife.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLifeTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLifeTest.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLifeTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLifeTest/bin/Debug/netcoreapp2.2/GameOfLifeTest.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLifeTest/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLifeTest/bin/Debug/netcoreapp2.2/nunit_random_seed.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLifeTest/obj/Debug/netcoreapp2.2/GameOfLifeTest.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameOfLifeTest/GameRulesTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLifeTest/GameRulesTests.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,38 +42,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameOfLife/BoundaryLessGrid.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+            <state relative-caret-position="227">
+              <caret line="64" column="40" lean-forward="true" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
               <folding>
-                <marker date="1573017857133" expanded="false" signature="6:47" ph="..." />
-                <marker date="1573017857133" expanded="true" signature="69:4223" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="113:4221" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="383:529" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="572:952" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="677:914" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="760:852" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="1022:1332" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="1140:1194" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="1225:1292" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="1383:2160" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="1450:2108" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="2191:2581" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="2269:2544" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="2355:2530" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="2431:2512" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="2630:3389" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="2769:3273" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="2855:3259" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="3005:3097" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="3151:3241" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="3458:3964" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="3684:3921" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="3745:3907" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="4013:4086" ph="{...}" />
-                <marker date="1573017857133" expanded="true" signature="4134:4206" ph="{...}" />
+                <marker date="1573019755158" expanded="false" signature="6:47" ph="..." />
+                <marker date="1573019755158" expanded="true" signature="69:4065" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="113:4063" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="299:403" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="446:835" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="554:797" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="640:735" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="905:1215" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="1023:1077" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="1108:1175" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="1275:2061" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="1351:2009" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="2092:2482" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="2170:2445" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="2256:2431" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="2332:2413" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="2531:3263" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="2661:3165" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="2747:3151" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="2897:2989" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="3043:3133" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="3318:3806" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="3526:3763" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="3587:3749" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="3855:3928" ph="{...}" />
+                <marker date="1573019755158" expanded="true" signature="3976:4048" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -96,12 +83,41 @@
         <entry file="file://$PROJECT_DIR$/GameOfLife/GameRules.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+              <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding>
-                <marker date="1573013515778" expanded="true" signature="6:32" ph="..." />
-                <marker date="1573013515778" expanded="true" signature="54:382" ph="{...}" />
-                <marker date="1573013515778" expanded="true" signature="96:380" ph="{...}" />
-                <marker date="1573013515778" expanded="true" signature="164:374" ph="{...}" />
+                <marker date="1573019350032" expanded="true" signature="6:32" ph="..." />
+                <marker date="1573019350032" expanded="true" signature="54:391" ph="{...}" />
+                <marker date="1573019350032" expanded="true" signature="96:389" ph="{...}" />
+                <marker date="1573019350032" expanded="true" signature="173:383" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/GameOfLifeTest/GameRulesTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+              <folding>
+                <marker date="1573020221232" expanded="true" signature="6:51" ph="..." />
+                <marker date="1573020221232" expanded="true" signature="77:787" ph="{...}" />
+                <marker date="1573020221232" expanded="true" signature="111:785" ph="{...}" />
+                <marker date="1573020221232" expanded="true" signature="161:181" ph="{...}" />
+                <marker date="1573020221232" expanded="true" signature="276:779" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GameOfLife/IGameRules.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <folding>
+                <marker date="1573019350045" expanded="true" signature="20:124" ph="{...}" />
+                <marker date="1573019350045" expanded="true" signature="54:122" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -110,67 +126,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameOfLife/Cell.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="30">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
               <folding>
-                <marker date="1573017857135" expanded="true" signature="20:422" ph="{...}" />
-                <marker date="1573017857135" expanded="true" signature="44:420" ph="{...}" />
-                <marker date="1573017857135" expanded="true" signature="147:207" ph="{...}" />
-                <marker date="1573017857135" expanded="true" signature="246:324" ph="{...}" />
-                <marker date="1573017857135" expanded="true" signature="354:405" ph="{...}" />
+                <marker date="1573019350038" expanded="true" signature="20:826" ph="{...}" />
+                <marker date="1573019350038" expanded="true" signature="50:824" ph="{...}" />
+                <marker date="1573019350038" expanded="true" signature="130:186" ph="{...}" />
+                <marker date="1573019350038" expanded="true" signature="229:343" ph="{...}" />
+                <marker date="1573019350038" expanded="true" signature="382:448" ph="{...}" />
+                <marker date="1573019350038" expanded="true" signature="478:529" ph="{...}" />
+                <marker date="1573019350038" expanded="true" signature="566:623" ph="{...}" />
+                <marker date="1573019350038" expanded="true" signature="653:711" ph="{...}" />
+                <marker date="1573019350038" expanded="true" signature="748:809" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameOfLife/MutableCell.cs">
+        <entry file="file://$PROJECT_DIR$/GameOfLife/ICell.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="30">
+              <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
               <folding>
-                <marker date="1573017857131" expanded="true" signature="6:47" ph="..." />
-                <marker date="1573017857131" expanded="true" signature="69:686" ph="{...}" />
-                <marker date="1573017857131" expanded="true" signature="100:684" ph="{...}" />
-                <marker date="1573017857131" expanded="true" signature="183:238" ph="{...}" />
-                <marker date="1573017857131" expanded="true" signature="289:402" ph="{...}" />
-                <marker date="1573017857131" expanded="true" signature="432:488" ph="{...}" />
-                <marker date="1573017857131" expanded="true" signature="518:575" ph="{...}" />
-                <marker date="1573017857131" expanded="true" signature="611:678" ph="{...}" />
+                <marker date="1573019350023" expanded="true" signature="20:143" ph="{...}" />
+                <marker date="1573019350023" expanded="true" signature="63:141" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameOfLife/GridFactory.cs">
+        <entry file="file://$PROJECT_DIR$/GameOfLife/IReadOnlyCell.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+            <state relative-caret-position="30">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
               <folding>
-                <marker date="1573003064474" expanded="true" signature="20:1049" ph="{...}" />
-                <marker date="1573003064474" expanded="true" signature="58:1047" ph="{...}" />
-                <marker date="1573003064474" expanded="true" signature="156:1023" ph="{...}" />
-                <marker date="1573003064474" expanded="true" signature="433:940" ph="{...}" />
-                <marker date="1573003064474" expanded="true" signature="497:926" ph="{...}" />
-                <marker date="1573003064474" expanded="true" signature="602:697" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameOfLife/Game.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-              <folding>
-                <marker date="1573015602560" expanded="true" signature="45:751" ph="{...}" />
-                <marker date="1573015602560" expanded="true" signature="69:749" ph="{...}" />
-                <marker date="1573015602560" expanded="true" signature="239:337" ph="{...}" />
-                <marker date="1573015602560" expanded="true" signature="370:492" ph="{...}" />
-                <marker date="1573015602560" expanded="true" signature="521:742" ph="{...}" />
-                <marker date="1573015602560" expanded="true" signature="592:732" ph="{...}" />
+                <marker date="1573019027591" expanded="true" signature="20:119" ph="{...}" />
+                <marker date="1573019027591" expanded="true" signature="57:117" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -179,28 +172,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameOfLife/IGrid.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+            <state relative-caret-position="135">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
-                <marker date="1573007503147" expanded="true" signature="20:201" ph="{...}" />
-                <marker date="1573007503147" expanded="true" signature="49:199" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GameOfLife/ConsoleOperations.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="9" selection-start-line="16" selection-start-column="7" selection-end-line="19" selection-end-column="9" />
-              <folding>
-                <marker date="1573014487750" expanded="true" signature="35:486" ph="{...}" />
-                <marker date="1573014487750" expanded="true" signature="91:484" ph="{...}" />
-                <marker date="1573014487750" expanded="true" signature="143:203" ph="{...}" />
-                <marker date="1573014487750" expanded="true" signature="254:310" ph="{...}" />
-                <marker date="1573014487750" expanded="true" signature="340:399" ph="{...}" />
-                <marker date="1573014487750" expanded="true" signature="428:478" ph="{...}" />
+                <marker date="1573019350035" expanded="true" signature="20:210" ph="{...}" />
+                <marker date="1573019350035" expanded="true" signature="49:208" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -209,7 +185,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GameOfLifeTest/BoundryLessGridTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
+            <state relative-caret-position="14">
               <caret line="80" column="68" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="68" />
               <folding>
                 <marker date="1573012333710" expanded="false" signature="6:65" ph="..." />
@@ -234,25 +210,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GameOfLife/IGameRules.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameOfLife/BoundaryLessGrid.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GameOfLife/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GameOfLife/IGrid.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GameOfLife/MutableCell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameOfLife/Cell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameOfLife/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GameOfLifeTest/GameRulesTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameOfLifeTest/BoundryLessGridTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameOfLife/ConsoleOperations.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameOfLife/IConsoleOperations.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameOfLife/IGameRules.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameOfLife/IReadOnlyCell.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameOfLife/ICell.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameOfLife/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameOfLife/IGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/GameOfLifeTest/GameRulesTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/.local/share/Symbols/src/nunit/nunit/4530d6dba175fae6ff8f8ade6c07fd05e6c1c7c5/src/NUnitFramework/framework/Internal/Reflect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameOfLife/Game.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameOfLifeTest/GameTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GameOfLife/ConsoleOperations.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/GameOfLife/IConsoleOperations.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameOfLife/GridFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameOfLifeTest/GridFactoryTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/GameOfLife/GameRules.cs" root0="FORCE_HIGHLIGHTING" />
@@ -270,22 +247,25 @@
         <option value="$PROJECT_DIR$/GameRulesTests/GameRulesTests.cs" />
         <option value="$PROJECT_DIR$/GameTests/GameTests.cs" />
         <option value="$PROJECT_DIR$/GameOfLifeTest/GridTests.cs" />
-        <option value="$PROJECT_DIR$/GameOfLife/IGameRules.cs" />
         <option value="$PROJECT_DIR$/GameOfLife/Grid.cs" />
-        <option value="$PROJECT_DIR$/GameOfLife/GridFactory.cs" />
-        <option value="$PROJECT_DIR$/GameOfLife/IGrid.cs" />
         <option value="$PROJECT_DIR$/GameOfLifeTest/BoundryLessGridTests.cs" />
         <option value="$PROJECT_DIR$/GameOfLife/Program.cs" />
-        <option value="$PROJECT_DIR$/GameOfLifeTest/GameRulesTests.cs" />
         <option value="$PROJECT_DIR$/GameOfLifeTest/GameTests.cs" />
         <option value="$PROJECT_DIR$/GameOfLifeTest/GridFactoryTests.cs" />
-        <option value="$PROJECT_DIR$/GameOfLife/GameRules.cs" />
         <option value="$PROJECT_DIR$/GameOfLife/IConsoleOperations.cs" />
         <option value="$PROJECT_DIR$/GameOfLife/ConsoleOperations.cs" />
         <option value="$PROJECT_DIR$/GameOfLife/Game.cs" />
-        <option value="$PROJECT_DIR$/GameOfLife/BoundaryLessGrid.cs" />
-        <option value="$PROJECT_DIR$/GameOfLife/Cell.cs" />
         <option value="$PROJECT_DIR$/GameOfLife/MutableCell.cs" />
+        <option value="$PROJECT_DIR$/GameOfLife/GridFactory.cs" />
+        <option value="$PROJECT_DIR$/GameOfLife/IReadOnlyCelll.cs" />
+        <option value="$PROJECT_DIR$/GameOfLife/IReadOnlyCell.cs" />
+        <option value="$PROJECT_DIR$/GameOfLife/ICell.cs" />
+        <option value="$PROJECT_DIR$/GameOfLife/Cell.cs" />
+        <option value="$PROJECT_DIR$/GameOfLife/GameRules.cs" />
+        <option value="$PROJECT_DIR$/GameOfLife/IGameRules.cs" />
+        <option value="$PROJECT_DIR$/GameOfLife/IGrid.cs" />
+        <option value="$PROJECT_DIR$/GameOfLife/BoundaryLessGrid.cs" />
+        <option value="$PROJECT_DIR$/GameOfLifeTest/GameRulesTests.cs" />
       </list>
     </option>
   </component>
@@ -296,11 +276,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-3124" />
-    <option name="y" value="110" />
-    <option name="width" value="1509" />
-    <option name="height" value="947" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-3416" />
+    <option name="y" value="23" />
+    <option name="width" value="3416" />
+    <option name="height" value="1337" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -386,12 +366,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572306133010</updated>
-      <workItem from="1572306134584" duration="82302000" />
+      <workItem from="1572306134584" duration="84294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82302000" />
+    <option name="totallyTimeSpent" value="84294000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,23 +383,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3440" y="23" width="3440" height="1337" extended-state="6" />
+    <frame x="-3416" y="23" width="3416" height="1337" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.0985874" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.09928868" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unit Tests" order="1" weight="0.25040388" />
+      <window_info active="true" anchor="bottom" id="Unit Tests" order="1" visible="true" weight="0.24979919" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="5" />
       <window_info anchor="bottom" id="Change Signature" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.43878388" />
+      <window_info anchor="bottom" id="Build" order="7" weight="0.43855423" />
       <window_info anchor="bottom" id="NuGet" order="8" weight="0.22350042" />
       <window_info anchor="bottom" id="Message" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.26586345" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.26586345" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.19628432" />
       <window_info anchor="bottom" id="Find" order="12" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
@@ -540,31 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameOfLife/IGameRules.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding>
-            <marker date="1572999659746" expanded="true" signature="20:115" ph="{...}" />
-            <marker date="1572999659746" expanded="true" signature="54:113" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameOfLifeTest/GameRulesTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
-          <folding>
-            <marker date="1573013204401" expanded="true" signature="6:51" ph="..." />
-            <marker date="1573013204401" expanded="true" signature="77:694" ph="{...}" />
-            <marker date="1573013204401" expanded="true" signature="111:692" ph="{...}" />
-            <marker date="1573013204401" expanded="true" signature="161:181" ph="{...}" />
-            <marker date="1573013204401" expanded="true" signature="276:686" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GameOfLife/State.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -631,24 +586,155 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GameOfLife/Game.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <marker date="1573015602560" expanded="true" signature="45:751" ph="{...}" />
+            <marker date="1573015602560" expanded="true" signature="69:749" ph="{...}" />
+            <marker date="1573015602560" expanded="true" signature="239:337" ph="{...}" />
+            <marker date="1573015602560" expanded="true" signature="370:492" ph="{...}" />
+            <marker date="1573015602560" expanded="true" signature="521:742" ph="{...}" />
+            <marker date="1573015602560" expanded="true" signature="592:732" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameOfLife/MutableCell.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GameOfLife/GridFactory.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="345">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
           <folding>
-            <marker date="1573003064474" expanded="true" signature="20:1049" ph="{...}" />
-            <marker date="1573003064474" expanded="true" signature="58:1047" ph="{...}" />
-            <marker date="1573003064474" expanded="true" signature="156:1023" ph="{...}" />
-            <marker date="1573003064474" expanded="true" signature="433:940" ph="{...}" />
-            <marker date="1573003064474" expanded="true" signature="497:926" ph="{...}" />
-            <marker date="1573003064474" expanded="true" signature="602:697" ph="{...}" />
+            <marker date="1573018804387" expanded="true" signature="20:914" ph="{...}" />
+            <marker date="1573018804387" expanded="true" signature="58:912" ph="{...}" />
+            <marker date="1573018804387" expanded="true" signature="156:888" ph="{...}" />
+            <marker date="1573018804387" expanded="true" signature="370:819" ph="{...}" />
+            <marker date="1573018804387" expanded="true" signature="434:805" ph="{...}" />
+            <marker date="1573018804387" expanded="true" signature="539:634" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameOfLife/IGameRules.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding>
+            <marker date="1573019350045" expanded="true" signature="20:124" ph="{...}" />
+            <marker date="1573019350045" expanded="true" signature="54:122" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameOfLife/IGrid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <marker date="1573019350035" expanded="true" signature="20:210" ph="{...}" />
+            <marker date="1573019350035" expanded="true" signature="49:208" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameOfLife/Cell.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding>
+            <marker date="1573019350038" expanded="true" signature="20:826" ph="{...}" />
+            <marker date="1573019350038" expanded="true" signature="50:824" ph="{...}" />
+            <marker date="1573019350038" expanded="true" signature="130:186" ph="{...}" />
+            <marker date="1573019350038" expanded="true" signature="229:343" ph="{...}" />
+            <marker date="1573019350038" expanded="true" signature="382:448" ph="{...}" />
+            <marker date="1573019350038" expanded="true" signature="478:529" ph="{...}" />
+            <marker date="1573019350038" expanded="true" signature="566:623" ph="{...}" />
+            <marker date="1573019350038" expanded="true" signature="653:711" ph="{...}" />
+            <marker date="1573019350038" expanded="true" signature="748:809" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameOfLife/BoundaryLessGrid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="64" column="40" lean-forward="true" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
+          <folding>
+            <marker date="1573019755158" expanded="false" signature="6:47" ph="..." />
+            <marker date="1573019755158" expanded="true" signature="69:4065" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="113:4063" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="299:403" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="446:835" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="554:797" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="640:735" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="905:1215" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="1023:1077" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="1108:1175" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="1275:2061" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="1351:2009" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="2092:2482" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="2170:2445" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="2256:2431" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="2332:2413" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="2531:3263" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="2661:3165" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="2747:3151" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="2897:2989" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="3043:3133" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="3318:3806" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="3526:3763" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="3587:3749" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="3855:3928" ph="{...}" />
+            <marker date="1573019755158" expanded="true" signature="3976:4048" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameOfLife/IReadOnlyCell.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <marker date="1573019027591" expanded="true" signature="20:119" ph="{...}" />
+            <marker date="1573019027591" expanded="true" signature="57:117" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameOfLife/ICell.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding>
+            <marker date="1573019350023" expanded="true" signature="20:143" ph="{...}" />
+            <marker date="1573019350023" expanded="true" signature="63:141" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GameOfLife/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <marker date="1573012739349" expanded="true" signature="35:514" ph="{...}" />
+            <marker date="1573012739349" expanded="true" signature="55:512" ph="{...}" />
+            <marker date="1573012739349" expanded="true" signature="101:506" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GameOfLifeTest/BoundryLessGridTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
+        <state relative-caret-position="14">
           <caret line="80" column="68" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="68" />
           <folding>
             <marker date="1573012333710" expanded="false" signature="6:65" ph="..." />
@@ -669,116 +755,26 @@
     <entry file="file://$PROJECT_DIR$/GameOfLife/GameRules.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="65" selection-start-line="10" selection-start-column="65" selection-end-line="10" selection-end-column="65" />
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
           <folding>
-            <marker date="1573013515778" expanded="true" signature="6:32" ph="..." />
-            <marker date="1573013515778" expanded="true" signature="54:382" ph="{...}" />
-            <marker date="1573013515778" expanded="true" signature="96:380" ph="{...}" />
-            <marker date="1573013515778" expanded="true" signature="164:374" ph="{...}" />
+            <marker date="1573019350032" expanded="true" signature="6:32" ph="..." />
+            <marker date="1573019350032" expanded="true" signature="54:391" ph="{...}" />
+            <marker date="1573019350032" expanded="true" signature="96:389" ph="{...}" />
+            <marker date="1573019350032" expanded="true" signature="173:383" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GameOfLife/Cell.cs">
+    <entry file="file://$PROJECT_DIR$/GameOfLifeTest/GameRulesTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="435">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding>
-            <marker date="1573017857135" expanded="true" signature="20:422" ph="{...}" />
-            <marker date="1573017857135" expanded="true" signature="44:420" ph="{...}" />
-            <marker date="1573017857135" expanded="true" signature="147:207" ph="{...}" />
-            <marker date="1573017857135" expanded="true" signature="246:324" ph="{...}" />
-            <marker date="1573017857135" expanded="true" signature="354:405" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameOfLife/MutableCell.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <marker date="1573017857131" expanded="true" signature="6:47" ph="..." />
-            <marker date="1573017857131" expanded="true" signature="69:686" ph="{...}" />
-            <marker date="1573017857131" expanded="true" signature="100:684" ph="{...}" />
-            <marker date="1573017857131" expanded="true" signature="183:238" ph="{...}" />
-            <marker date="1573017857131" expanded="true" signature="289:402" ph="{...}" />
-            <marker date="1573017857131" expanded="true" signature="432:488" ph="{...}" />
-            <marker date="1573017857131" expanded="true" signature="518:575" ph="{...}" />
-            <marker date="1573017857131" expanded="true" signature="611:678" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameOfLife/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <marker date="1573012739349" expanded="true" signature="35:514" ph="{...}" />
-            <marker date="1573012739349" expanded="true" signature="55:512" ph="{...}" />
-            <marker date="1573012739349" expanded="true" signature="101:506" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameOfLife/IGrid.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-          <folding>
-            <marker date="1573007503147" expanded="true" signature="20:201" ph="{...}" />
-            <marker date="1573007503147" expanded="true" signature="49:199" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameOfLife/Game.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding>
-            <marker date="1573015602560" expanded="true" signature="45:751" ph="{...}" />
-            <marker date="1573015602560" expanded="true" signature="69:749" ph="{...}" />
-            <marker date="1573015602560" expanded="true" signature="239:337" ph="{...}" />
-            <marker date="1573015602560" expanded="true" signature="370:492" ph="{...}" />
-            <marker date="1573015602560" expanded="true" signature="521:742" ph="{...}" />
-            <marker date="1573015602560" expanded="true" signature="592:732" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GameOfLife/BoundaryLessGrid.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding>
-            <marker date="1573017857133" expanded="false" signature="6:47" ph="..." />
-            <marker date="1573017857133" expanded="true" signature="69:4223" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="113:4221" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="383:529" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="572:952" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="677:914" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="760:852" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="1022:1332" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="1140:1194" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="1225:1292" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="1383:2160" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="1450:2108" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="2191:2581" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="2269:2544" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="2355:2530" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="2431:2512" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="2630:3389" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="2769:3273" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="2855:3259" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="3005:3097" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="3151:3241" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="3458:3964" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="3684:3921" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="3745:3907" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="4013:4086" ph="{...}" />
-            <marker date="1573017857133" expanded="true" signature="4134:4206" ph="{...}" />
+            <marker date="1573020221232" expanded="true" signature="6:51" ph="..." />
+            <marker date="1573020221232" expanded="true" signature="77:787" ph="{...}" />
+            <marker date="1573020221232" expanded="true" signature="111:785" ph="{...}" />
+            <marker date="1573020221232" expanded="true" signature="161:181" ph="{...}" />
+            <marker date="1573020221232" expanded="true" signature="276:779" ph="{...}" />
           </folding>
         </state>
       </provider>
