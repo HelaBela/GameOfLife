@@ -18,6 +18,10 @@ namespace GameOfLife
         {
             return Console.ReadLine();
         }
-        
+
+        public void Clear()
+        { 
+            Console.Clear();
+        }
     }
 }

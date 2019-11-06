@@ -6,25 +6,19 @@ namespace GridTests
 {
     public class GridFactoryTests
     {
-         [Test]
+        [Test]
         public void CanCreateGrid()
         {
             //arrange
-            var consoleOperations = new Mock<IConsoleOperations>();
-            var cellsState = new[,]{{0,0,0,1},{1,1,0,1}, {1, 0, 1, 1},{1, 1,0,0}};
-           
+            var cellsState = new[,] {{0, 0, 0, 1}, {1, 1, 0, 1}, {1, 0, 1, 1}, {1, 1, 0, 0}};
+
             //act
-           
-            var grid = GridFactory.CreateGrid(cellsState, consoleOperations.Object);
-            grid.DisplayGrid();
+
+            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, new GameRules());
 
 
             //assert
-
-            consoleOperations.Verify(
-                m => m.WriteLine(It.Is<string>(c => c == "...*\n**.*\n*.**\n**..\n")), Times.Exactly(1));
-
+            Assert.IsNotNull(grid);
         }
-        
     }
 }

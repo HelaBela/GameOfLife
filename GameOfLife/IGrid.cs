@@ -2,8 +2,10 @@ namespace GameOfLife
 {
     public interface IGrid
     {
-        int GetNeigbours();
-        void CreateNextGeneration();
+        BoundaryLessGrid CreateNextGen();
         string ToString();
+        Cell[] GetNeighbours(int x, int y);
+        bool IsAlive();
+
     }
 }

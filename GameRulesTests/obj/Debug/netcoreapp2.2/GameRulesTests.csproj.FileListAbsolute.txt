@@ -1,0 +1,17 @@
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/bin/Debug/netcoreapp2.2/NUnit3.TestAdapter.pdb
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/bin/Debug/netcoreapp2.2/nunit.engine.netstandard.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/bin/Debug/netcoreapp2.2/GameRulesTests.deps.json
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/bin/Debug/netcoreapp2.2/GameRulesTests.runtimeconfig.json
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/bin/Debug/netcoreapp2.2/GameRulesTests.runtimeconfig.dev.json
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/bin/Debug/netcoreapp2.2/GameRulesTests.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/bin/Debug/netcoreapp2.2/GameRulesTests.pdb
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/bin/Debug/netcoreapp2.2/GameOfLife.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/bin/Debug/netcoreapp2.2/GameOfLife.pdb
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/obj/Debug/netcoreapp2.2/GameRulesTests.csprojAssemblyReference.cache
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/obj/Debug/netcoreapp2.2/GameRulesTests.csproj.CoreCompileInputs.cache
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/obj/Debug/netcoreapp2.2/GameRulesTests.AssemblyInfoInputs.cache
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/obj/Debug/netcoreapp2.2/GameRulesTests.AssemblyInfo.cs
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/obj/Debug/netcoreapp2.2/GameRulesTests.csproj.CopyComplete
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/obj/Debug/netcoreapp2.2/GameRulesTests.dll
+/Users/helena.franczak/RiderProjects/GameOfLife/GameRulesTests/obj/Debug/netcoreapp2.2/GameRulesTests.pdb

@@ -1,17 +1,16 @@
+using System;
+using System.Linq;
+
 namespace GameOfLife
 {
-    public class GameRules
+    public class GameRules : IGameRules
     {
-
-        public Cell[,] GetNextState(int neighbours)
+        
+        public State GetNextState(Cell[] neighbours)
         {
+            var aliveNeighboursCount = neighbours.Count(n => n.IsAlive());
             
-            return new Cell[2,2];
+            return (aliveNeighboursCount < 2 || aliveNeighboursCount > 3) ? State.Dead : State.Alive;
         }
-
-        private void PrintGrid()
-        {
-        }
-
     }
 }

@@ -5,7 +5,9 @@ namespace GameOfLife
         void Write(string content);
         
         void WriteLine(string content);
-
+        
         string Read();
+
+        void Clear();
     }
 }

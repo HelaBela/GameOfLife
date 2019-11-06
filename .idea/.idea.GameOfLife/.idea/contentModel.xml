@@ -9,14 +9,17 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="GameOfLife" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="BoundaryLessGrid.cs" t="Include" />
         <e p="Cell.cs" t="Include" />
         <e p="ConsoleOperations.cs" t="Include" />
+        <e p="Game.cs" t="Include" />
         <e p="GameOfLife.csproj" t="IncludeRecursive" />
         <e p="GameRules.cs" t="Include" />
-        <e p="Grid.cs" t="Include" />
         <e p="GridFactory.cs" t="Include" />
         <e p="IConsoleOperations.cs" t="Include" />
+        <e p="IGameRules.cs" t="Include" />
         <e p="IGrid.cs" t="Include" />
+        <e p="MutableCell.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -30,9 +33,11 @@
       <e p="GameOfLife.sln" t="IncludeFlat" />
       <e p="GameOfLifeTest" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="BoundryLessGridTests.cs" t="Include" />
         <e p="GameOfLifeTest.csproj" t="IncludeRecursive" />
+        <e p="GameRulesTests.cs" t="Include" />
+        <e p="GameTests.cs" t="Include" />
         <e p="GridFactoryTests.cs" t="Include" />
-        <e p="GridTests.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
