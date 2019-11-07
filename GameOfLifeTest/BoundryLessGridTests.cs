@@ -7,10 +7,13 @@ namespace GridFactoryTests
 {
     public class BoundryLessGridTests
     {
+        private GameRules _gameRules;
 
         [SetUp]
         public void Setup()
         {
+            
+            _gameRules = new GameRules();
         }
 
         [Test]
@@ -18,8 +21,7 @@ namespace GridFactoryTests
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
-            var gameRules = new Mock<IGameRules>();
-            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, gameRules.Object);
+            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, _gameRules);
             
             //act
             
@@ -36,8 +38,7 @@ namespace GridFactoryTests
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0}, {1, 1, 0}, {1, 0, 1}};
-            var gameRules = new Mock<IGameRules>();
-            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, gameRules.Object);
+            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, _gameRules);
 
 
             //act
@@ -56,8 +57,7 @@ namespace GridFactoryTests
         {
             //arrange
             var cellsState = new[,] {{0, 1, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 1, 0, 0}};
-            var gameRules = new Mock<IGameRules>();
-            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, gameRules.Object);
+            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, _gameRules);
 
 
             //act
@@ -77,8 +77,7 @@ namespace GridFactoryTests
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0}, {1, 0, 0}, {1, 0, 1}};
-            var gameRules = new Mock<IGameRules>();
-            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, gameRules.Object);
+            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, _gameRules);
 
 
             //act
@@ -95,8 +94,7 @@ namespace GridFactoryTests
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0}, {1, 1, 0}, {1, 1, 1}};
-            var gameRules = new Mock<IGameRules>();
-            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, gameRules.Object);
+            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, _gameRules);
 
 
             //act
@@ -112,8 +110,7 @@ namespace GridFactoryTests
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0}, {1, 1, 0}, {0, 1, 0}};
-            var gameRules = new Mock<IGameRules>();
-            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, gameRules.Object);
+            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, _gameRules);
 
 
             //act
@@ -130,8 +127,7 @@ namespace GridFactoryTests
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0}, {1, 1, 0}, {0, 0, 0}};
-            var gameRules = new Mock<IGameRules>();
-            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, gameRules.Object);
+            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, _gameRules);
 
 
             //act

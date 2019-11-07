@@ -71,19 +71,19 @@ namespace GameOfLife
            var nextGen = Clone(_cellsGeneration);
 
 
-            for (int X = 0; X < _cellsGeneration.GetLength(0); X++)
+            for (int x = 0; x < _cellsGeneration.GetLength(0); x++)
             {
                 for (int y = 0; y < _cellsGeneration.GetLength(1); y++)
                 {
-                    var currentCellReadonly = _cellsGeneration[X, y].GetReadOnlyVersion();
-                    var nextState = _gameRules.GetNextState(currentCellReadonly, GetNeighbours(X, y)); //will this make a circular dependency?
-                    if (nextState == State.Alive)
+                    var currentCellReadonly = _cellsGeneration[x, y].GetReadOnlyVersion();
+                    var nextState = _gameRules.GetNextState(currentCellReadonly, GetNeighbours(x, y)); 
+                    if (nextState == State.Alive && _cellsGeneration[x,y].IsDead())
                     {
-                        nextGen[X, y].Revive();
+                        nextGen[x, y].Revive();
                     }
                     else if (nextState == State.Dead)
                     {
-                        nextGen[X, y].Kill();
+                        nextGen[x, y].Kill();
                     }
                 }
             }

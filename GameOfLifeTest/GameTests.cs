@@ -1,3 +1,4 @@
+using System;
 using GameOfLife;
 using Moq;
 using NUnit.Framework;
@@ -37,12 +38,41 @@ namespace GameTests
         public void End_To_End_Test()
         {
             //arrange
-         
-            //act
+            
+            var cellsState = new[,]{{0,0,0,1},{1,1,0,1}, {1, 0, 1, 1},{1, 1,0,0}};
+            var gameRules = new GameRules();
+            
+            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, gameRules);
+            var consoleOperations = new Mock<ICommunicationOperations>();
+            
+            // "...*\n.*..\n....\n.*..\n", "*.*.\n....\n....\n....\n", "....\n....\n....\n....\n"
 
-           
+            //consoleOperations.SetupSequence(s => s.Write("...*\n**.*\n*.**\n**..\n"));
+            
+            //act
+            
+            var game = new Game(consoleOperations.Object, grid);
+            game.Start(); 
+            
 
             //assert
+            
+            consoleOperations.Verify(
+                m => m.Write(It.Is<string>(c =>
+                    c == "...*\n**.*\n*.**\n**..\n")));
+            
+            consoleOperations.Verify(
+                m => m.Write(It.Is<string>(c =>
+                    c == "...*\n.*..\n....\n.*..\n")));
+            
+            consoleOperations.Verify(
+                m => m.Write(It.Is<string>(c =>
+                    c == "*.*.\n....\n....\n....\n")));
+            
+            consoleOperations.Verify(
+                m => m.Write(It.Is<string>(c =>
+                    c == "....\n....\n....\n....\n")));
+            
 
          
         }
