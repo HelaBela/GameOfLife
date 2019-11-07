@@ -33,34 +33,19 @@ namespace GameOfLife
         }
 
 
-        private int HandleEdgeIfNeeded(int position, int dimension)
+
+        public ReadOnlyCell[] GetNeighbours(int x, int y)
         {
-            var gridHeight = _cellsGeneration.GetLength(dimension);
-            if (position >= gridHeight)
+            var neighbours = new List<ReadOnlyCell>
             {
-                return 0;
-            }
-
-            if (position < 0)
-            {
-                return gridHeight - 1;
-            }
-
-            return position;
-        }
-
-        public IReadOnlyCell[] GetNeighbours(int x, int y)
-        {
-            var neighbours = new List<IReadOnlyCell>
-            {
-                _cellsGeneration[x, HandleEdgeIfNeeded(y + 1, 1)],
-                _cellsGeneration[HandleEdgeIfNeeded(x + 1, 0), y],
-                _cellsGeneration[HandleEdgeIfNeeded(x - 1, 0), y],
-                _cellsGeneration[HandleEdgeIfNeeded(x - 1, 0), HandleEdgeIfNeeded(y + 1, 1)],
-                _cellsGeneration[HandleEdgeIfNeeded(x - 1, 0), HandleEdgeIfNeeded(y - 1, 1)],
-                _cellsGeneration[HandleEdgeIfNeeded(x + 1, 0), HandleEdgeIfNeeded(y - 1, 1)],
-                _cellsGeneration[x, HandleEdgeIfNeeded(y - 1, 1)],
-                _cellsGeneration[HandleEdgeIfNeeded(x + 1, 0), HandleEdgeIfNeeded(y + 1, 1)]
+                _cellsGeneration[x, HandleEdgeIfNeeded(y + 1, 1)].GetReadOnlyVersion(),
+                _cellsGeneration[HandleEdgeIfNeeded(x + 1, 0), y].GetReadOnlyVersion(),
+                _cellsGeneration[HandleEdgeIfNeeded(x - 1, 0), y].GetReadOnlyVersion(),
+                _cellsGeneration[HandleEdgeIfNeeded(x - 1, 0), HandleEdgeIfNeeded(y + 1, 1)].GetReadOnlyVersion(),
+                _cellsGeneration[HandleEdgeIfNeeded(x - 1, 0), HandleEdgeIfNeeded(y - 1, 1)].GetReadOnlyVersion(),
+                _cellsGeneration[HandleEdgeIfNeeded(x + 1, 0), HandleEdgeIfNeeded(y - 1, 1)].GetReadOnlyVersion(),
+                _cellsGeneration[x, HandleEdgeIfNeeded(y - 1, 1)].GetReadOnlyVersion(),
+                _cellsGeneration[HandleEdgeIfNeeded(x + 1, 0), HandleEdgeIfNeeded(y + 1, 1)].GetReadOnlyVersion()
             };
             return neighbours.ToArray();
         }
@@ -86,18 +71,19 @@ namespace GameOfLife
            var nextGen = Clone(_cellsGeneration);
 
 
-            for (int i = 0; i < _cellsGeneration.GetLength(0); i++)
+            for (int X = 0; X < _cellsGeneration.GetLength(0); X++)
             {
-                for (int j = 0; j < _cellsGeneration.GetLength(1); j++)
+                for (int y = 0; y < _cellsGeneration.GetLength(1); y++)
                 {
-                    var nextState = _gameRules.GetNextState(GetNeighbours(i, j));
+                    var currentCellReadonly = _cellsGeneration[X, y].GetReadOnlyVersion();
+                    var nextState = _gameRules.GetNextState(currentCellReadonly, GetNeighbours(X, y)); //will this make a circular dependency?
                     if (nextState == State.Alive)
                     {
-                        nextGen[i, j].Revive();
+                        nextGen[X, y].Revive();
                     }
                     else if (nextState == State.Dead)
                     {
-                        nextGen[i, j].Kill();
+                        nextGen[X, y].Kill();
                     }
                 }
             }
@@ -106,6 +92,21 @@ namespace GameOfLife
             return new BoundaryLessGrid(nextGen, _gameRules);
         }
 
+        private int HandleEdgeIfNeeded(int position, int dimension)
+        {
+            var gridHeight = _cellsGeneration.GetLength(dimension);
+            if (position >= gridHeight)
+            {
+                return 0;
+            }
+
+            if (position < 0)
+            {
+                return gridHeight - 1;
+            }
+
+            return position;
+        }
 
         private Cell[,] Clone(Cell[,] existingCells)
         {

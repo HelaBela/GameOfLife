@@ -12,11 +12,11 @@ namespace GameTests
         }
 
         [Test]
-        public void CanDisplayGrid()
+        public void Can_Display_Grid()
         {
             //arrange
             var stringToTest = "....\n....\n....\n....\n";
-            var consoleOperations = new Mock<IConsoleOperations>();
+            var consoleOperations = new Mock<ICommunicationOperations>();
 
             var grid = new Mock<IGrid>();
             grid.Setup(s => s.ToString()).Returns(stringToTest);
@@ -34,7 +34,7 @@ namespace GameTests
         
         
         [Test]
-        public void d()
+        public void End_To_End_Test()
         {
             //arrange
          

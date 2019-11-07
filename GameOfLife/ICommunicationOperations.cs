@@ -1,6 +1,6 @@
 namespace GameOfLife
 {
-    public interface IConsoleOperations
+    public interface ICommunicationOperations
     {
         void Write(string content);
         

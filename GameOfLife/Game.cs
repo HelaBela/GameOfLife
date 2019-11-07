@@ -4,19 +4,19 @@ namespace GameOfLife
 {
     public class Game
     {
-        private readonly IConsoleOperations _consoleOperations;
+        private readonly ICommunicationOperations _communicationOperations;
         private IGrid _grid;
 
-        public Game(IConsoleOperations consoleOperations, IGrid grid)
+        public Game(ICommunicationOperations communicationOperations, IGrid grid)
         {
-            _consoleOperations = consoleOperations;
+            _communicationOperations = communicationOperations;
             _grid = grid;
         }
 
         public void PrintGrid()
         {
            // _consoleOperations.Clear();
-            _consoleOperations.WriteLine(_grid.ToString());
+            _communicationOperations.WriteLine(_grid.ToString());
         }
 
         public void Start()

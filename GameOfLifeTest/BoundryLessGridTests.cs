@@ -7,16 +7,14 @@ namespace GridFactoryTests
 {
     public class BoundryLessGridTests
     {
-        private Mock<IConsoleOperations> _consoleOperations;
 
         [SetUp]
         public void Setup()
         {
-            _consoleOperations = new Mock<IConsoleOperations>();
         }
 
         [Test]
-        public void CanDisplayGrid()
+        public void Can_Display_Grid()
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}};
@@ -34,7 +32,7 @@ namespace GridFactoryTests
         }
 
         [Test]
-        public void CanFind8NeighboursForMiddleCell()
+        public void Can_Find_8_Neighbours_For_Middle_Cell()
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0}, {1, 1, 0}, {1, 0, 1}};
@@ -54,7 +52,7 @@ namespace GridFactoryTests
         
         
         [Test]
-        public void CellAtPosition00_Has8Neighbours_CozItLeapsToAnotherSide()
+        public void Cell_At_Position_00_Has_8_Neighbours_Because_It_Leaps_To_Another_Side()
         {
             //arrange
             var cellsState = new[,] {{0, 1, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 1, 0, 0}};
@@ -75,7 +73,7 @@ namespace GridFactoryTests
         
           
         [Test]
-        public void DeadCell_With_3AliveNeigbours_Should_Revive_In_NextGeneration()
+        public void Dead_Cell_With_3_Alive_Neighbours_Will_Revive_In_Next_Generation()
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0}, {1, 0, 0}, {1, 0, 1}};
@@ -93,7 +91,7 @@ namespace GridFactoryTests
         }
         
         [Test]
-        public void AliveCell_WillDie_FromOverPopulation()
+        public void Alive_Cell_Will_Die_From_Over_Population()
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0}, {1, 1, 0}, {1, 1, 1}};
@@ -110,7 +108,7 @@ namespace GridFactoryTests
         }
         
         [Test]
-        public void AliveCell_WillRemainAlive_WhenHaving2AliveNeighbours()
+        public void Alive_Cell_Will_Remain_Alive_When_Having_2_Alive_Neighbours()
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0}, {1, 1, 0}, {0, 1, 0}};
@@ -128,7 +126,7 @@ namespace GridFactoryTests
         }
         
         [Test]
-        public void AliveCell_WillDie_WhenThereIsOneAliveNeighbour()
+        public void Alive_Cell_Will_Die_When_There_Is_One_Alive_Neighbour()
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0}, {1, 1, 0}, {0, 0, 0}};

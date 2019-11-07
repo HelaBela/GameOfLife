@@ -2,7 +2,7 @@ using System;
 
 namespace GameOfLife
 {
-    public class ConsoleOperations:IConsoleOperations
+    public class ConsoleOperations:ICommunicationOperations
     {
         public void WriteLine(string content)
         {

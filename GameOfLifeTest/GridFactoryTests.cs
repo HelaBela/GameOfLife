@@ -7,7 +7,7 @@ namespace GridTests
     public class GridFactoryTests
     {
         [Test]
-        public void CanCreateGrid()
+        public void Can_Create_Grid()
         {
             //arrange
             var cellsState = new[,] {{0, 0, 0, 1}, {1, 1, 0, 1}, {1, 0, 1, 1}, {1, 1, 0, 0}};
