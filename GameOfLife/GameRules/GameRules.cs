@@ -6,29 +6,29 @@ namespace GameOfLife
     public class GameRules : IGameRules
     {
         
-        public State GetNextState(ReadOnlyCell currentCell, ReadOnlyCell[] neighbours)
+        public CellState GetNextState(ReadOnlyCell currentCell, ReadOnlyCell[] neighbours)
         {
             var aliveNeighboursCount = neighbours.Count(n => n.IsAlive());
             
             
             if ( currentCell.IsAlive() && (aliveNeighboursCount < 2 || aliveNeighboursCount > 3))
             {
-                return State.Dead;
+                return CellState.Dead;
                 
             }
 
             if (currentCell.IsAlive() && (aliveNeighboursCount == 2 || aliveNeighboursCount == 3))
             {
-                return State.Alive;
+                return CellState.Alive;
 
             }
             
             if (currentCell.IsDead() && aliveNeighboursCount == 3)
             {
-                return State.Alive;
+                return CellState.Alive;
             }
 
-            return State.Dead;
+            return CellState.Dead;
 
 
 

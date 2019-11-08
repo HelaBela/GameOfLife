@@ -1,6 +1,6 @@
 namespace GameOfLife
 {
-    public enum State
+    public enum CellState
     {
         Alive,
         Dead

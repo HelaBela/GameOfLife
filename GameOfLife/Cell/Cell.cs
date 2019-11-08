@@ -1,25 +1,24 @@
 namespace GameOfLife
 {
-    public class Cell:ICell
+    public class Cell : ICell
     {
-        private  State _cellState;
+        private CellState _cellCellState;
         private ReadOnlyCell _readOnlyCell;
 
 
-        public Cell(State cellState)
+        public Cell(CellState cellCellState)
         {
-            _cellState = cellState;
+            _cellCellState = cellCellState;
             UpdateReadOnlyCell();
         }
 
         public override string ToString()
         {
-            if (_cellState == State.Dead)
+            if (_cellCellState == CellState.Dead)
                 return ".";
             return "*";
         }
 
-       
         public bool IsAlive()
         {
             return _readOnlyCell.IsAlive();
@@ -29,33 +28,34 @@ namespace GameOfLife
         {
             return _readOnlyCell.IsDead();
         }
-        
-        public void Kill()
 
-        {
-            _cellState = State.Dead;
-            UpdateReadOnlyCell();
-        }
-
-
-        public void Revive()
-        {
-            _cellState = State.Alive;
-            UpdateReadOnlyCell();
-        }
-        
         public Cell Clone()
         {
-            return new Cell(_cellState);
+            return new Cell(_cellCellState);
         }
 
         public ReadOnlyCell GetReadOnlyVersion()
         {
             return _readOnlyCell;
         }
+
+        public void Kill()
+
+        {
+            _cellCellState = CellState.Dead;
+            UpdateReadOnlyCell();
+        }
+
+
+        public void Revive()
+        {
+            _cellCellState = CellState.Alive;
+            UpdateReadOnlyCell();
+        }
+
         private void UpdateReadOnlyCell()
         {
-            _readOnlyCell = new ReadOnlyCell(_cellState);
+            _readOnlyCell = new ReadOnlyCell(_cellCellState);
         }
     }
 }

@@ -21,19 +21,19 @@ namespace GameRulesTests
 
             var neighbours = new ReadOnlyCell[]
             {
-                new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead)
+                new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead)
             };
 
             //act
 
-            var currentCell = new ReadOnlyCell(State.Alive);
+            var currentCell = new ReadOnlyCell(CellState.Alive);
             var nextState = _gameRules.GetNextState(currentCell, neighbours);
 
 
             //assert
-            Assert.IsTrue(nextState == State.Dead);
+            Assert.IsTrue(nextState == CellState.Dead);
         }
 
         [Test]
@@ -43,20 +43,20 @@ namespace GameRulesTests
 
             var neighbours = new ReadOnlyCell[]
             {
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead)
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead)
             };
 
 
             //act
 
-            var currentCell = new ReadOnlyCell(State.Alive);
+            var currentCell = new ReadOnlyCell(CellState.Alive);
             var nextState = _gameRules.GetNextState(currentCell, neighbours);
 
 
             //assert
-            Assert.IsTrue(nextState == State.Dead);
+            Assert.IsTrue(nextState == CellState.Dead);
         }
 
         [Test]
@@ -66,20 +66,20 @@ namespace GameRulesTests
 
             var neighbours = new ReadOnlyCell[]
             {
-                new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead)
+                new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead)
             };
 
 
             //act
 
-            var currentCell = new ReadOnlyCell(State.Alive);
+            var currentCell = new ReadOnlyCell(CellState.Alive);
             var nextState = _gameRules.GetNextState(currentCell, neighbours);
 
 
             //assert
-            Assert.IsTrue(nextState == State.Alive);
+            Assert.IsTrue(nextState == CellState.Alive);
         }
 
 
@@ -90,20 +90,20 @@ namespace GameRulesTests
 
             var neighbours = new ReadOnlyCell[]
             {
-                new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead)
+                new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead)
             };
 
 
             //act
 
-            var currentCell = new ReadOnlyCell(State.Dead);
+            var currentCell = new ReadOnlyCell(CellState.Dead);
             var nextState = _gameRules.GetNextState(currentCell, neighbours);
 
 
             //assert
-            Assert.IsTrue(nextState == State.Dead);
+            Assert.IsTrue(nextState == CellState.Dead);
         }
         
         
@@ -114,20 +114,20 @@ namespace GameRulesTests
 
             var neighbours = new ReadOnlyCell[]
             {
-                new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead)
+                new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead)
             };
 
 
             //act
 
-            var currentCell = new ReadOnlyCell(State.Dead);
+            var currentCell = new ReadOnlyCell(CellState.Dead);
             var nextState = _gameRules.GetNextState(currentCell, neighbours);
 
 
             //assert
-            Assert.IsTrue(nextState == State.Dead);
+            Assert.IsTrue(nextState == CellState.Dead);
         }
         
         [Test]
@@ -137,20 +137,20 @@ namespace GameRulesTests
 
             var neighbours = new ReadOnlyCell[]
             {
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead)
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead)
             };
 
 
             //act
 
-            var currentCell = new ReadOnlyCell(State.Dead);
+            var currentCell = new ReadOnlyCell(CellState.Dead);
             var nextState = _gameRules.GetNextState(currentCell, neighbours);
 
 
             //assert
-            Assert.IsTrue(nextState == State.Dead);
+            Assert.IsTrue(nextState == CellState.Dead);
         }
 
 
@@ -161,20 +161,20 @@ namespace GameRulesTests
 
             var neighbours = new ReadOnlyCell[]
             {
-                new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Alive),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead)
+                new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Alive),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead)
             };
 
 
             //act
 
-            var currentCell = new ReadOnlyCell(State.Alive);
+            var currentCell = new ReadOnlyCell(CellState.Alive);
             var nextState = _gameRules.GetNextState(currentCell, neighbours);
 
 
             //assert
-            Assert.IsTrue(nextState == State.Alive);
+            Assert.IsTrue(nextState == CellState.Alive);
         }
 
         [Test]
@@ -184,20 +184,20 @@ namespace GameRulesTests
 
             var neighbours = new ReadOnlyCell[]
             {
-                new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Alive),
-                new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead)
+                new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Alive),
+                new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead)
             };
 
 
             //act
-            var currentCell = new ReadOnlyCell(State.Alive);
+            var currentCell = new ReadOnlyCell(CellState.Alive);
 
             var nextState = _gameRules.GetNextState(currentCell, neighbours);
 
 
             //assert
-            Assert.IsTrue(nextState == State.Dead);
+            Assert.IsTrue(nextState == CellState.Dead);
         }
 
 
@@ -208,20 +208,20 @@ namespace GameRulesTests
 
             var neighbours = new ReadOnlyCell[]
             {
-                new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Alive), new ReadOnlyCell(State.Alive),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead),
-                new ReadOnlyCell(State.Dead), new ReadOnlyCell(State.Dead)
+                new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Alive), new ReadOnlyCell(CellState.Alive),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead),
+                new ReadOnlyCell(CellState.Dead), new ReadOnlyCell(CellState.Dead)
             };
 
 
             //act
 
-            var currentCell = new ReadOnlyCell(State.Alive);
+            var currentCell = new ReadOnlyCell(CellState.Alive);
             var nextState = _gameRules.GetNextState(currentCell, neighbours);
 
 
             //assert
-            Assert.IsTrue(nextState == State.Alive);
+            Assert.IsTrue(nextState == CellState.Alive);
         }
     }
 }

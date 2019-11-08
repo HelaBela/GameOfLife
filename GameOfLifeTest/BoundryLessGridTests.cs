@@ -82,7 +82,7 @@ namespace GridFactoryTests
 
             //act
 
-            var nextGenGrid = grid.CreateNextGen();
+            var nextGenGrid = grid.CreateNextGeneration();
 
             //assert
             Assert.IsTrue(nextGenGrid.IsCellAliveAt(1,1));
@@ -98,7 +98,7 @@ namespace GridFactoryTests
 
 
             //act
-            var nextGenGrid = grid.CreateNextGen();
+            var nextGenGrid = grid.CreateNextGeneration();
 
             //assert
             Assert.IsTrue(nextGenGrid.IsCellDeadAt(1,1));
@@ -115,7 +115,7 @@ namespace GridFactoryTests
 
             //act
 
-            var nextGenGrid = grid.CreateNextGen();
+            var nextGenGrid = grid.CreateNextGeneration();
 
             //assert
             Assert.IsTrue(nextGenGrid.IsCellAliveAt(1,1));
@@ -132,7 +132,7 @@ namespace GridFactoryTests
 
             //act
 
-            var nextGenGrid = grid.CreateNextGen();
+            var nextGenGrid = grid.CreateNextGeneration();
 
             //assert
             Assert.IsTrue(nextGenGrid.IsCellDeadAt(1,1));

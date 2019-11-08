@@ -25,7 +25,7 @@ namespace GameOfLife
             while (_grid.IsAlive())
             {
                 Thread.Sleep(1000);
-                _grid = _grid.CreateNextGen();
+                _grid = _grid.CreateNextGeneration();
                 PrintGrid();
             }
         }

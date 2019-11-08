@@ -24,57 +24,47 @@ namespace GameTests
             var game = new Game(consoleOperations.Object, grid.Object);
 
             //act
-
             game.PrintGrid();
 
 
             //assert
-
             consoleOperations.Verify(m => m.WriteLine(stringToTest), Times.Exactly(1));
         }
-        
-        
+
+
         [Test]
-        public void End_To_End_Test()
+        public void Should_Continue_For_4_Times_Given_The_State()
         {
             //arrange
-            
-            var cellsState = new[,]{{0,0,0,1},{1,1,0,1}, {1, 0, 1, 1},{1, 1,0,0}};
+
+            var cellsState = new[,] {{0, 0, 0, 1}, {1, 1, 0, 1}, {1, 0, 1, 1}, {1, 1, 0, 0}};
             var gameRules = new GameRules();
-            
+
             var grid = GridFactory.CreateBoundaryLessGrid(cellsState, gameRules);
             var consoleOperations = new Mock<ICommunicationOperations>();
-            
-            // "...*\n.*..\n....\n.*..\n", "*.*.\n....\n....\n....\n", "....\n....\n....\n....\n"
 
-            //consoleOperations.SetupSequence(s => s.Write("...*\n**.*\n*.**\n**..\n"));
-            
             //act
-            
+
             var game = new Game(consoleOperations.Object, grid);
-            game.Start(); 
-            
+            game.Start();
+
 
             //assert
-            
-            consoleOperations.Verify(
-                m => m.Write(It.Is<string>(c =>
-                    c == "...*\n**.*\n*.**\n**..\n")));
-            
-            consoleOperations.Verify(
-                m => m.Write(It.Is<string>(c =>
-                    c == "...*\n.*..\n....\n.*..\n")));
-            
-            consoleOperations.Verify(
-                m => m.Write(It.Is<string>(c =>
-                    c == "*.*.\n....\n....\n....\n")));
-            
-            consoleOperations.Verify(
-                m => m.Write(It.Is<string>(c =>
-                    c == "....\n....\n....\n....\n")));
-            
 
-         
+            consoleOperations.Verify(
+                m => m.WriteLine("...*\n**.*\n*.**\n**..\n"));
+
+            consoleOperations.Verify(
+                m => m.WriteLine(It.Is<string>(c =>
+                    c == "...*\n.*..\n....\n.*..\n")));
+
+            consoleOperations.Verify(
+                m => m.WriteLine(It.Is<string>(c =>
+                    c == "*.*.\n....\n....\n....\n")));
+
+            consoleOperations.Verify(
+                m => m.WriteLine(It.Is<string>(c =>
+                    c == "....\n....\n....\n....\n")));
         }
     }
 }

@@ -9,20 +9,35 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="GameOfLife" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="BoundaryLessGrid.cs" t="Include" />
         <e p="Cell" t="Include">
           <e p="Cell.cs" t="Include" />
+          <e p="CellState.cs" t="Include" />
           <e p="ICell.cs" t="Include" />
           <e p="ReadOnlyCell.cs" t="Include" />
         </e>
-        <e p="ConsoleOperations.cs" t="Include" />
+        <e p="Comunication" t="Include">
+          <e p="ConsoleOperations.cs" t="Include" />
+          <e p="ICommunicationOperations.cs" t="Include" />
+        </e>
         <e p="Game.cs" t="Include" />
         <e p="GameOfLife.csproj" t="IncludeRecursive" />
-        <e p="GameRules.cs" t="Include" />
-        <e p="GridFactory.cs" t="Include" />
-        <e p="ICommunicationOperations.cs" t="Include" />
-        <e p="IGameRules.cs" t="Include" />
-        <e p="IGrid.cs" t="Include" />
+        <e p="GameRules" t="Include">
+          <e p="GameRules.cs" t="Include" />
+          <e p="IGameRules.cs" t="Include" />
+        </e>
+        <e p="Grid" t="Include">
+          <e p="BoundaryLessGrid.cs" t="Include" />
+          <e p="GridFactory.cs" t="Include" />
+          <e p="IGrid.cs" t="Include" />
+        </e>
+        <e p="GridProvider" t="Include">
+          <e p="HardCodedGridProvider.cs" t="Include" />
+          <e p="IGridStateProvider.cs" t="Include" />
+          <e p="IRandomNumber.cs" t="Include" />
+          <e p="RandomGridProvider.cs" t="Include" />
+          <e p="RandomNumber.cs" t="Include" />
+          <e p="UserGridProvider.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
@@ -31,7 +46,6 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
-        <e p="State.cs" t="Include" />
       </e>
       <e p="GameOfLife.sln" t="IncludeFlat" />
       <e p="GameOfLifeTest" t="IncludeRecursive">
@@ -49,6 +63,8 @@
             </e>
           </e>
         </e>
+        <e p="RandomGridProviderTests.cs" t="Include" />
+        <e p="UserGridProviderTests.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>

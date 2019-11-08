@@ -12,14 +12,14 @@ namespace GameOfLife
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    State aliveOrDead;
+                    CellState aliveOrDead;
 
                     if (cellsState[i, j] == 1)
                     {
-                        aliveOrDead = State.Alive;
+                        aliveOrDead = CellState.Alive;
                     }
                     else
-                        aliveOrDead = State.Dead;
+                        aliveOrDead = CellState.Dead;
                     
                     cells[i, j] = new Cell(aliveOrDead);
                 }

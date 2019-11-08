@@ -2,16 +2,16 @@ namespace GameOfLife
 {
     public class ReadOnlyCell
     {
-        private readonly State _cellState;
+        private readonly CellState _cellCellState;
 
-        public ReadOnlyCell(State cellState)
+        public ReadOnlyCell(CellState cellCellState)
         {
-            _cellState = cellState;
+            _cellCellState = cellCellState;
         }
 
         public bool IsAlive()
         {
-            return _cellState == State.Alive;
+            return _cellCellState == CellState.Alive;
         }
 
         public bool IsDead()
