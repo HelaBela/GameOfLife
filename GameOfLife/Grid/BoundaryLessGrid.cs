@@ -3,36 +3,34 @@ using System.Collections.Generic;
 
 namespace GameOfLife
 {
-    public class BoundaryLessGrid : IGrid
+    public class BoundaryLessGrid :IGrid
     {
         private readonly Cell[,] _cells;
-        private readonly IGameRules _gameRules;
+       
         
-        public BoundaryLessGrid(Cell[,] cells, IGameRules gameRules)
+        public BoundaryLessGrid(Cell[,] cells)
         {
             _cells = cells;
-            _gameRules = gameRules;
+           
         }
 
-        public override string ToString()
+        public ReadOnlyCell[,] GetCells()
         {
-            var output = "";
-
-            for (int i = 0; i < _cells.GetLength(0); i++)
+            
+            var readOnlyCells = new ReadOnlyCell[_cells.GetLength(0),_cells.GetLength(1)];
+            for (int x = 0; x < _cells.GetLength(0); x++)
             {
-                for (int j = 0; j < _cells.GetLength(1); j++)
+                for (int y = 0; y < _cells.GetLength(1); y++)
                 {
-                    output += $"{_cells[i, j]}";
+                    readOnlyCells[x, y] =_cells[x, y].GetReadOnlyVersion();
                 }
-
-                output += Environment.NewLine;
             }
 
-            return output;
+            return readOnlyCells;
+
         }
 
-
-        public ReadOnlyCell[] GetNeighbours(int x, int y)
+        private ReadOnlyCell[] GetNeighbours(int x, int y)
         {
             var neighbours = new List<ReadOnlyCell>
             {
@@ -47,24 +45,9 @@ namespace GameOfLife
             };
             return neighbours.ToArray();
         }
+        
 
-        public bool IsAlive()
-        {
-            for (int i = 0; i < _cells.GetLength(0); i++)
-            {
-                for (int j = 0; j < _cells.GetLength(1); j++)
-                {
-                    if (_cells[i, j].IsAlive())
-                    {
-                        return true;
-                    }
-                }
-            }
-
-            return false;
-        }
-
-        public BoundaryLessGrid CreateNextGeneration()
+        public BoundaryLessGrid CreateNextGeneration(IGameRules gameRules)
         {
             var nextGen = Clone(_cells);
 
@@ -74,7 +57,7 @@ namespace GameOfLife
                 for (int y = 0; y < _cells.GetLength(1); y++)
                 {
                     var currentCellReadonly = _cells[x, y].GetReadOnlyVersion();
-                    var nextState = _gameRules.GetNextState(currentCellReadonly, GetNeighbours(x, y));
+                    var nextState = gameRules.GetNextState(currentCellReadonly, GetNeighbours(x, y));
                     if (nextState == CellState.Alive && _cells[x, y].IsDead())
                     {
                         nextGen[x, y].Revive();
@@ -87,19 +70,8 @@ namespace GameOfLife
             }
 
 
-            return new BoundaryLessGrid(nextGen, _gameRules);
+            return new BoundaryLessGrid(nextGen);
         }
-        
-        public bool IsCellAliveAt(int x, int y)
-        {
-            return _cells[x, y].IsAlive();
-        }
-
-        public bool IsCellDeadAt(int x, int y)
-        {
-            return _cells[x, y].IsDead();
-        }
-        
         private int HandleEdgeIfNeeded(int position, int dimension)
         {
             var gridHeight = _cells.GetLength(dimension);
@@ -122,12 +94,12 @@ namespace GameOfLife
             var cols = existingCells.GetLength(1);
 
             var clonedCells = new Cell[rows, cols];
-            for (int i = 0; i < rows; i++)
+            for (int x = 0; x < rows; x++)
             {
-                for (int j = 0; j < cols; j++)
+                for (int y = 0; y < cols; y++)
                 {
-                    var currentGenCell = existingCells[i, j];
-                    clonedCells[i, j] = currentGenCell.Clone();
+                    var currentGenCell = existingCells[x, y];
+                    clonedCells[x, y] = currentGenCell.Clone();
                 }
             }
 

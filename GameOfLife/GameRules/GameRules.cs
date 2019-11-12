@@ -29,11 +29,6 @@ namespace GameOfLife
             }
 
             return CellState.Dead;
-
-
-
-           // return (aliveNeighboursCount < 2 || aliveNeighboursCount > 3) ? State.Dead : State.Alive;
-            
             
         }
     }

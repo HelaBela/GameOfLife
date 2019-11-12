@@ -7,14 +7,13 @@ namespace GameOfLife
         static void Main(string[] args)
         {
             var consoleOperations = new ConsoleOperations();
-            var random = new RandomNumber();
-            var gridProvider = new RandomGridProvider(random);
+            var gridProvider = new HardCodedGridProvider();
 
             var gridState = gridProvider.GetGridState();
             var gameRules = new GameRules();
-            var grid = GridFactory.CreateBoundaryLessGrid(gridState, gameRules);
+            var grid = GridFactory.CreateBoundaryLessGrid(gridState);
 
-            var game = new Game(consoleOperations, grid);
+            var game = new Game(consoleOperations, grid, gameRules);
             game.Start(); 
 
 

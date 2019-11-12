@@ -1,6 +1,6 @@
 namespace GameOfLife
 {
-    public class Cell : ICell
+    public class Cell
     {
         private CellState _cellCellState;
         private ReadOnlyCell _readOnlyCell;
@@ -11,14 +11,7 @@ namespace GameOfLife
             _cellCellState = cellCellState;
             UpdateReadOnlyCell();
         }
-
-        public override string ToString()
-        {
-            if (_cellCellState == CellState.Dead)
-                return ".";
-            return "*";
-        }
-
+        
         public bool IsAlive()
         {
             return _readOnlyCell.IsAlive();

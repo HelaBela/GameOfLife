@@ -12,7 +12,6 @@
         <e p="Cell" t="Include">
           <e p="Cell.cs" t="Include" />
           <e p="CellState.cs" t="Include" />
-          <e p="ICell.cs" t="Include" />
           <e p="ReadOnlyCell.cs" t="Include" />
         </e>
         <e p="Comunication" t="Include">
@@ -31,7 +30,7 @@
           <e p="IGrid.cs" t="Include" />
         </e>
         <e p="GridProvider" t="Include">
-          <e p="HardCodedGridProvider.cs" t="Include" />
+          <e p="HardCodedGridStateProvider.cs" t="Include" />
           <e p="IGridStateProvider.cs" t="Include" />
           <e p="IRandomNumber.cs" t="Include" />
           <e p="RandomGridProvider.cs" t="Include" />
@@ -46,6 +45,7 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
+        <e p="StringFormatter.cs" t="Include" />
       </e>
       <e p="GameOfLife.sln" t="IncludeFlat" />
       <e p="GameOfLifeTest" t="IncludeRecursive">

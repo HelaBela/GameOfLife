@@ -17,7 +17,7 @@ namespace GridTests
             var randomGridProvider = new RandomGridProvider(randomNumber.Object);
 
 
-            randomNumber.SetupSequence(s => s.RandomNr(0, 1))
+            randomNumber.SetupSequence(s => s.RandomNr(0, 2))
                 .Returns(0)
                 .Returns(1)
                 .Returns(1)

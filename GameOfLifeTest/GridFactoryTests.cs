@@ -14,7 +14,7 @@ namespace GridTests
 
             //act
 
-            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, new GameRules());
+            var grid = GridFactory.CreateBoundaryLessGrid(cellsState);
 
 
             //assert

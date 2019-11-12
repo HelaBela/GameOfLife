@@ -20,8 +20,9 @@ namespace GameTests
             var consoleOperations = new Mock<ICommunicationOperations>();
 
             var grid = new Mock<IGrid>();
+            var gameRules = new GameRules();
             grid.Setup(s => s.ToString()).Returns(stringToTest);
-            var game = new Game(consoleOperations.Object, grid.Object);
+            var game = new Game(consoleOperations.Object, grid.Object, gameRules);
 
             //act
             game.PrintGrid();
@@ -40,12 +41,12 @@ namespace GameTests
             var cellsState = new[,] {{0, 0, 0, 1}, {1, 1, 0, 1}, {1, 0, 1, 1}, {1, 1, 0, 0}};
             var gameRules = new GameRules();
 
-            var grid = GridFactory.CreateBoundaryLessGrid(cellsState, gameRules);
+            var grid = GridFactory.CreateBoundaryLessGrid(cellsState);
             var consoleOperations = new Mock<ICommunicationOperations>();
 
             //act
 
-            var game = new Game(consoleOperations.Object, grid);
+            var game = new Game(consoleOperations.Object, grid, gameRules);
             game.Start();
 
 

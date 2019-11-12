@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+
 namespace GameOfLife
 {
     public class ReadOnlyCell
@@ -7,6 +10,13 @@ namespace GameOfLife
         public ReadOnlyCell(CellState cellCellState)
         {
             _cellCellState = cellCellState;
+        }
+        
+        public override string ToString()
+        {
+            if (_cellCellState == CellState.Dead)
+                return ".";
+            return "*";
         }
 
         public bool IsAlive()

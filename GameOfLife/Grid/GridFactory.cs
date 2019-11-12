@@ -2,29 +2,29 @@ namespace GameOfLife
 {
     public static class GridFactory
     {
-        public static IGrid CreateBoundaryLessGrid(int[,] cellsState, IGameRules gameRules)
+        public static IGrid CreateBoundaryLessGrid(int[,] cellsState)
         {
             var rows = cellsState.GetLength(0);
             var columns = cellsState.GetLength(1);
             
             var cells = new Cell[rows, columns];
-            for (int i = 0; i < rows; i++)
+            for (int x = 0; x < rows; x++)
             {
-                for (int j = 0; j < columns; j++)
+                for (int y = 0; y < columns; y++)
                 {
                     CellState aliveOrDead;
 
-                    if (cellsState[i, j] == 1)
+                    if (cellsState[x, y] == 1)
                     {
                         aliveOrDead = CellState.Alive;
                     }
                     else
                         aliveOrDead = CellState.Dead;
                     
-                    cells[i, j] = new Cell(aliveOrDead);
+                    cells[x, y] = new Cell(aliveOrDead);
                 }
             }
-            return new BoundaryLessGrid(cells, gameRules);
+            return new BoundaryLessGrid(cells);
         }
         
         
