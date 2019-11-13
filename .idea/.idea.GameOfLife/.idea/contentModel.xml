@@ -18,6 +18,9 @@
           <e p="ConsoleOperations.cs" t="Include" />
           <e p="ICommunicationOperations.cs" t="Include" />
         </e>
+        <e p="Formatter" t="Include">
+          <e p="StringFormatter.cs" t="Include" />
+        </e>
         <e p="Game.cs" t="Include" />
         <e p="GameOfLife.csproj" t="IncludeRecursive" />
         <e p="GameRules" t="Include">
@@ -45,7 +48,6 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
-        <e p="StringFormatter.cs" t="Include" />
       </e>
       <e p="GameOfLife.sln" t="IncludeFlat" />
       <e p="GameOfLifeTest" t="IncludeRecursive">

@@ -3,49 +3,30 @@ using System.Collections.Generic;
 
 namespace GameOfLife
 {
-    public class BoundaryLessGrid :IGrid
+    public class BoundaryLessGrid : IGrid
     {
         private readonly Cell[,] _cells;
-       
-        
+
+
         public BoundaryLessGrid(Cell[,] cells)
         {
             _cells = cells;
-           
         }
 
         public ReadOnlyCell[,] GetCells()
         {
-            
-            var readOnlyCells = new ReadOnlyCell[_cells.GetLength(0),_cells.GetLength(1)];
+            var readOnlyCells = new ReadOnlyCell[_cells.GetLength(0), _cells.GetLength(1)];
             for (int x = 0; x < _cells.GetLength(0); x++)
             {
                 for (int y = 0; y < _cells.GetLength(1); y++)
                 {
-                    readOnlyCells[x, y] =_cells[x, y].GetReadOnlyVersion();
+                    readOnlyCells[x, y] = _cells[x, y].GetReadOnlyVersion();
                 }
             }
 
             return readOnlyCells;
-
         }
 
-        private ReadOnlyCell[] GetNeighbours(int x, int y)
-        {
-            var neighbours = new List<ReadOnlyCell>
-            {
-                _cells[x, HandleEdgeIfNeeded(y + 1, 1)].GetReadOnlyVersion(),
-                _cells[HandleEdgeIfNeeded(x + 1, 0), y].GetReadOnlyVersion(),
-                _cells[HandleEdgeIfNeeded(x - 1, 0), y].GetReadOnlyVersion(),
-                _cells[HandleEdgeIfNeeded(x - 1, 0), HandleEdgeIfNeeded(y + 1, 1)].GetReadOnlyVersion(),
-                _cells[HandleEdgeIfNeeded(x - 1, 0), HandleEdgeIfNeeded(y - 1, 1)].GetReadOnlyVersion(),
-                _cells[HandleEdgeIfNeeded(x + 1, 0), HandleEdgeIfNeeded(y - 1, 1)].GetReadOnlyVersion(),
-                _cells[x, HandleEdgeIfNeeded(y - 1, 1)].GetReadOnlyVersion(),
-                _cells[HandleEdgeIfNeeded(x + 1, 0), HandleEdgeIfNeeded(y + 1, 1)].GetReadOnlyVersion()
-            };
-            return neighbours.ToArray();
-        }
-        
 
         public BoundaryLessGrid CreateNextGeneration(IGameRules gameRules)
         {
@@ -72,6 +53,42 @@ namespace GameOfLife
 
             return new BoundaryLessGrid(nextGen);
         }
+
+
+        public bool IsAlive()
+        {
+            for (int x = 0; x < _cells.GetLength(0); x++)
+            {
+                for (int y = 0; y < _cells.GetLength(1); y++)
+                {
+                    if (_cells[x, y].IsAlive())
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+
+        private ReadOnlyCell[] GetNeighbours(int x, int y)
+        {
+            var neighbours = new List<ReadOnlyCell>
+            {
+                _cells[x, HandleEdgeIfNeeded(y + 1, 1)].GetReadOnlyVersion(),
+                _cells[HandleEdgeIfNeeded(x + 1, 0), y].GetReadOnlyVersion(),
+                _cells[HandleEdgeIfNeeded(x - 1, 0), y].GetReadOnlyVersion(),
+                _cells[HandleEdgeIfNeeded(x - 1, 0), HandleEdgeIfNeeded(y + 1, 1)].GetReadOnlyVersion(),
+                _cells[HandleEdgeIfNeeded(x - 1, 0), HandleEdgeIfNeeded(y - 1, 1)].GetReadOnlyVersion(),
+                _cells[HandleEdgeIfNeeded(x + 1, 0), HandleEdgeIfNeeded(y - 1, 1)].GetReadOnlyVersion(),
+                _cells[x, HandleEdgeIfNeeded(y - 1, 1)].GetReadOnlyVersion(),
+                _cells[HandleEdgeIfNeeded(x + 1, 0), HandleEdgeIfNeeded(y + 1, 1)].GetReadOnlyVersion()
+            };
+            return neighbours.ToArray();
+        }
+
+
         private int HandleEdgeIfNeeded(int position, int dimension)
         {
             var gridHeight = _cells.GetLength(dimension);

@@ -4,6 +4,7 @@ namespace GameOfLife
     {
         BoundaryLessGrid CreateNextGeneration(IGameRules gameRules);
         ReadOnlyCell[,] GetCells();
+        bool IsAlive();
 
     }
 }
